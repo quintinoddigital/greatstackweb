@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(/resources/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+:root {
+    --gelo: #ECEAFF;
+    --preto: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins-Regular;
+}
+
+body {
+    background: #ECEAFF;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+}
+
+nav {
+    background: #1a1a1a;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logomarca {
+    width: 100px;
+    margin-left: -4rem;
+    cursor: pointer;
+}
+
+.perfil {
+    width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: -4rem;
+}
+
+.submenu-box {
+    position: absolute;
+    top: 100%;
+    right: 1%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.submenu-box.abrir-menu {
+    max-height: 400px;
+}
+
+.submenu {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+}
+
+.usuario h3 {
+    font-weight: 600;
+}
+
+.usuario img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.submenu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #CCC;
+    margin: 15px 0 10px;
+}
+
+.submenu-opcao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.submenu-opcao p {
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.submenu-opcao img {
+    width: 20px;
+    height: 20px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.submenu-opcao span {
+    font-size: 22px;
+    color: #525252;
+    transition: transform 0.5s;
+} 
+
+.submenu-opcao:hover span {
+    transform: translateX(0.3rem);
+    font-weight: bold;
+}
+
+.submenu-opcao:hover p {
+    transform: translateX(0.3rem);
+    font-weight: 700;
+}
+
+@media (max-width: 800px) { }
